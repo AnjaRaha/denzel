@@ -1,4 +1,4 @@
-const cheerio = require('cheerio');
+ const cheerio = require('cheerio');
 const fetch = require('node-fetch');
 const pLimit = require('p-limit');
 const pSettle = require('p-settle');
