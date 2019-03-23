@@ -12,11 +12,8 @@ const ObjectId = require("mongodb").ObjectID;
 const uri =  "mongodb+srv://Denzel:denzel@denzelw-0biil.mongodb.net/test?retryWrites=true";
 const DATABASE_NAME = "DenzelMovies";
 const DENZEL_IMDB_ID = 'nm0000243';
-const port = 9292;
 var app = Express();
-var app = Express();
-app.use(BodyParser.json());
-app.use(BodyParser.urlencoded({extended: true}));
+
 
 MongoClient.connect(uri,{useNewUrlParser:true},(error,client)=>{
     if(error){
